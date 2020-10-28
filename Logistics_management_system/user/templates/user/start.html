@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>user测试页</title>
+    <link rel="stylesheet" href="../../static/user/css/user.css">
+</head>
+<body>
+<form action="/user/appstart" method="post">
+    <p>
+        标题：<input type="text"name="test1">
+        <input type="submit" value="保存">
+    </p>
+    <textarea name="content" id="50" cols="30" rows="10"></textarea>
+    
+</form>
+<div>
+    {{ test1 }}
+    {{ content }}
+    
+</div>
+<script src="../../static/user/js/jquery.min.js"></script>
+<script src="../../static/user/js/user.js"></script>
+</body>
+</html>
+
