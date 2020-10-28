@@ -23,5 +23,6 @@ urlpatterns = [
         path('waybill/',include('waybill.urls')),
         path('order/',include('order.urls')),
         path('user/',include('user.urls')),
+        path('transfer_station/',include('transfer_station.urls')),
         path('',views.start),
 ]

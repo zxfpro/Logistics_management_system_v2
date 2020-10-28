@@ -1,5 +1,6 @@
 
 from django.shortcuts import render
+from .tools.waybill.tools import *
 # Create your views here.
 def appstart_view(request):
     if request.method == 'GET':

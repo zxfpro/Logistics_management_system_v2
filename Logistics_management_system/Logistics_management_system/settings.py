@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'waybill',
     'order',
     'user',
+    'transfer_station',
 ]
 
 MIDDLEWARE = [
