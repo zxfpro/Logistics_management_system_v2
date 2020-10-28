@@ -23,5 +23,5 @@ urlpatterns = [
         path('waybill/',include('waybill.urls')),
         path('order/',include('order.urls')),
         path('user/',include('user.urls')),
-      path('',views.start),
+        path('',views.start),
 ]
