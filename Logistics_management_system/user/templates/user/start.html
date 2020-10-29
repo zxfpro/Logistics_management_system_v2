@@ -4,24 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <title>user测试页</title>
-    <link rel="stylesheet" href="../../static/user/css/user.css">
 </head>
 <body>
-<form action="/user/appstart" method="post">
-    <p>
-        标题：<input type="text"name="test1">
-        <input type="submit" value="保存">
-    </p>
-    <textarea name="content" id="50" cols="30" rows="10"></textarea>
-    
-</form>
-<div>
-    {{ test1 }}
-    {{ content }}
-    
-</div>
-<script src="../../static/user/js/jquery.min.js"></script>
-<script src="../../static/user/js/user.js"></script>
+<a href="/order/appstart">用户登录</a>
+<a href="/order/express_main">快递小哥登录</a>
+<a href="/waybill/wayBill_main">物流小哥登录</a>
+<a href="/transfer_station/transform_view">中转站登录</a>
+
 </body>
 </html>
 

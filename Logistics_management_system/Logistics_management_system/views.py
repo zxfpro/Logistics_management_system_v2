@@ -6,10 +6,11 @@ from django.urls import reverse
 def start(request):
     if request.method =='GET':
 
-        return render(request,'start.html',locals())
+        return HttpResponseRedirect('/user/appstart')
+
     if request.method =='POST':
         text = request.POST.get('text')
 
-        return render(request,'start.html',locals())
-    
+        return HttpResponseRedirect('/user/appstart')
+
     

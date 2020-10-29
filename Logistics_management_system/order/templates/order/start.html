@@ -4,24 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <title>order测试页</title>
-    <link rel="stylesheet" href="../../static/order/css/order.css">
+    <link rel="stylesheet" href="/static/css/order.css">
 </head>
 <body>
-<form action="/order/appstart" method="post">
-    <p>
-        标题：<input type="text"name="test1">
-        <input type="submit" value="保存">
-    </p>
-    <textarea name="content" id="50" cols="30" rows="10"></textarea>
-    
-</form>
 <div>
-    {{ test1 }}
-    {{ content }}
-    
+<a href="main_order_web">下订单</a>
+<a href="main_search_web">查询订单</a>
+<a href="main_my_info">我的</a>
+
 </div>
-<script src="../../static/order/js/jquery.min.js"></script>
-<script src="../../static/order/js/order.js"></script>
 </body>
 </html>
 
