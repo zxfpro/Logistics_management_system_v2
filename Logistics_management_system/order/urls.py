@@ -12,6 +12,8 @@ urlpatterns = [
     path('main_order_web',views.main_order_web),
     path('main_search_web',views.main_search_web),
     path('main_my_info',views.main_my_info),
+    path('create_order',views.create_order),
+    path('text',views.text),
 
     #快递小哥
 

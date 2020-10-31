@@ -3,28 +3,57 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>快递小哥主页面</title>
-    <link rel="stylesheet" href="">
+    <title>
+        {% block title %}
+        快递小哥主页面
+        {% endblock %}
+    </title>
+    <link rel="stylesheet" href="/static/css/order.css">
 </head>
 
 <body>
-    <div>
-        <ul>
-            <li>待处理订单1  <a href="express_write_goods_info">填写商品信息</a></li>
-            <li>待处理订单2</li>
-            <li>待处理订单3</li>
-            <li>待处理订单4</li>
-            <li>......</li>
-        </ul>
-        <ul>
-            <li>待配送订单1 <a href="">签收</a></li>
-            <li>待配送订单2</li>
-            <li>待配送订单3</li>
-        </ul>
+    <div id="header">
+        <span style="float: left">
+            <a href="">
+                <h1>快递人员界面</h1>
+            </a>
+        </span>
+        <span class="list">
+            <ul>
+                <li style="float:right;">
+                    <a href="main_my_info">我的</a>
+                </li>
+            </ul>
+
+        </span>
 
     </div>
-    <div>
+    <div id="master" style="overflow: hidden">
+        {% block body %}
+        <div id="deal_with" style="float: left">
+            <ul>
+                <li>待处理订单1 <a href="express_write_goods_info">填写商品信息</a></li>
+                <li>待处理订单2</li>
+                <li>待处理订单3</li>
+                <li>待处理订单4</li>
+                <li>......</li>
+            </ul>
 
+        </div>
+
+        <div id="distribution" style="float: left;margin-left: 50px">
+            <ul>
+                <li>待配送订单1 <a href="">签收</a></li>
+                <li>待配送订单2</li>
+                <li>待配送订单3</li>
+            </ul>
+        </div>
+
+
+        {% endblock %}
+    </div>
+    <div id="footer">
+        声明
     </div>
 </body>
 

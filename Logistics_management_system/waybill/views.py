@@ -1,4 +1,4 @@
-
+from django.http import HttpResponse,HttpResponseRedirect
 from django.shortcuts import render
 from .tools.waybill.tools import *
 # Create your views here.
@@ -15,3 +15,7 @@ def wayBill_main(request):
     elif request.method == 'POST':
 
         return render(request,'waybill/wayBill_main.html',locals())
+
+def main_my_info(request):
+
+    return HttpResponseRedirect('/order/main_my_info')

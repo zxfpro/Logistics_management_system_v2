@@ -1,40 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>收件人信息</title>
+    <title>
+        收件人信息
+    </title>
     <link rel="stylesheet" href="/static/css/order.css">
 </head>
+
 <body>
-<form action="" method="post">
-    <ul>
-        <li>
-            姓名:<input type="text" name="name" value="{{ name }}">
-        </li>
-        <li>
-            电话:<input type="text" name="telephone" value="{{ telephone }}">
-        </li>
-        <li>
-            城市/区域:<input type="text" name="city" value="{{ city }}">
-        </li>
-        <li>
-            详细地址:<input type="text" name="detailed_address" value="{{ detailed_address }}">
-        </li>
-        <li>
-            公司名称:<input type="text" name="name_of_company" value="{{ name_of_company }}">
-        </li>
-        <li>
-            <input type="submit" value="提交">
-        </li>
-        <li>
-            <a href="address_write_by_page">快捷填写</a>
-            <a href="">填入地址簿</a>
-        </li>
-    </ul>
+    <div id="header">
+        <span style="float: left">
+            <a href="">
+                <h1>物流管理系统</h1>
+            </a>
+        </span>
 
+    </div>
 
+    <div id="master">
+        <form action="recipient" method="post">
+            <ul>
+                <li>
+                    <input type="text" name="re_name" placeholder="姓名">
+                </li>
+                <li>
+                    <input type="text" name="re_telephone" placeholder="电话">
+                </li>
+                <li>
+                    <input type="text" name="re_city" placeholder="城市/区域">
+                </li>
+                <li>
+                    <input type="text" name="re_detailed_address" placeholder="详细地址">
+                </li>
+                <li>
+                    <input type="text" name="re_name_of_company" placeholder="公司名称(选填)">
+                </li>
+                <li>
+                    <input type="submit" value="提交">
+                </li>
+                <li>
+                    <a href="main_order_web">返回</a>
+                </li>
+                <li>
+                    <a href="address_write_by_page">快捷填写</a>
+                </li>
+                <li>
+                    <a href="">填入地址簿</a>
+                </li>
+            </ul>
 
-</form>
+        </form>
 
+    </div>
+
+    <div id="footer">
+        声明:
+    </div>
 </body>
+
 </html>

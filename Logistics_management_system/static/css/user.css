@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+a{
+    text-decoration: none;
+    font-family: "微软雅黑";
+    font-size: 8px;
+    color:black;
+}
+
+h2
+{
+    font-family: "微软雅黑";
+    font-size: 40px;
+    color:rgb(100, 76, 76);
+}
+
+
+.icon{
+    width: 50px;
+    transition: 0.5s;
+}
+.icon:hover{
+    transform: scale(1.3);
+}
+
+#login>img{
+
+    height:800px;
+    position: fixed;
+    opacity: 0.5;
+}
+
+#title{
+    position: absolute;
+    margin-top: 30px;
+    margin-left: 40px;
+}
+
+#log{
+position: absolute;
+opacity: 0.8;
+width: 320px;
+height: 375px;
+
+left: 83%;
+/* 视觉处于最佳向上位置 */
+top: 20%;
+margin-left: -225px;
+z-index: 9999;
+background-color:transparent;
+border-radius: 10px;
+
+}
+
+#register{
+	position: absolute;
+	width: 410px;
+	height: 375px;
+	border: solid 0px red;
+	left: 50%;
+	/* 视觉处于最佳向上位置 */
+	top: 20%;
+	margin-left: -225px;
+	z-index: 9999;
+	background-color: #fff;
+	border-radius: 10px;
+	box-shadow: 3px 3px 5px #666;
+}
+
+
+#log input{
+    width: 300px;
+    height: 30px;
+    margin: 2px 3px 4px 5px;
+    border-radius: 10px;
+    border: solid 1px rgb(100, 100, 32);
+    
+}
+#log .submit_log{
+    background-color: greenyellow;
+}
+
+#log .submit_reg{
+    background-color: rgb(118, 160, 56);
+}
+
+
+
+
+
+
+
+

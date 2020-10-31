@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>注册</title>
+    <link rel="stylesheet" href="/static/css/user.css">
+</head>
+
+<body>
+    <div id="login">
+        <img src="/static/imgs/background/background2.jpg" alt="">
+    </div>
+    <form action="" method="POST">
+
+        <div id="register">
+            <div style="margin-top: 30px">
+                <!-- 单选按钮元素 -->
+                <input type="radio" name="account_type" id="yh" checked value="1" />用户<img
+                    src="/static/imgs/icon/user.png" alt="">&emsp;
+                <input type="radio" name="account_type" id="kd" value="2" />快递员<img
+                    src="/static/imgs/icon/kuaidiyuan.png" alt="">&emsp;
+                <input type="radio" name="account_type" id="wl" value="3" />物流<img src="/static/imgs/icon/wuliu.png"
+                    alt="">&emsp;
+                <input type="radio" name="account_type" id="zz" value="4" />中转站<img
+                    src="/static/imgs/icon/zhongzhuanzhan.png" alt="">&emsp;
+            </div>
+
+        <div id="log" style="left: 66%">
+
+                <p>
+                        <input type="text" placeholder="用户名" />
+                    </p>
+                    <p>
+                        <input type="password" placeholder="请输入密码"/>
+                    </p>
+                    <p>
+                        <input type="password" placeholder="请再次输入密码"/>
+                    </p>
+                    <p>
+                        <input type="text" placeholder="请输入邮箱"/>
+                    </p>
+                    <p id="work_id" style="display: none">
+                        <input type="text" placeholder="请输入工号"/>
+                    </p>
+                    <p>
+                        <input class="submit_reg" type="submit" value="立即注册" />
+                    </p>
+        
+                    <p>
+                        已有账号？<a href="login">请登录</a>
+                    </p>
+
+        </div>
+            
+
+        </div>
+
+        <script>
+            var work_id = document.getElementById('work_id');
+            var kd = document.getElementById('kd')
+            var zz = document.getElementById('zz')
+            var yh = document.getElementById('yh')
+            var wl = document.getElementById('wl')
+            kd.onclick = function () {
+                work_id.style.display = 'block';
+            }
+            zz.onclick = function () {
+                work_id.style.display = 'block';
+            }
+            yh.onclick = function () {
+                work_id.style.display = 'none';
+            }
+            wl.onclick = function () {
+                work_id.style.display = 'block';
+            }
+
+        </script>
+    </form>
+
+
+
+</body>
+
+</html>

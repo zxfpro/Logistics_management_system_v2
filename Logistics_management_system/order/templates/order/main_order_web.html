@@ -1,21 +1,74 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>订单页面</title>
-    <link rel="stylesheet" href="/static/css/order.css">
-</head>
-<body>
-<a href="sender">寄件人</a>
-<!--寄件人-->
-<div>
-    寄件人信息
+{% extends 'order/start.html' %}
+{% block title %}
+订单页面
+{% endblock %}
+
+{% block body %}
+<div style="margin-left: 40%">
+    <a href="sender"><h2>寄件人</h2></a>
+
+    <div>
+        寄件人信息
+        <ul>
+            <li>
+                <input type="text" value="姓名:{{ name }}" readonly='readonly'>
+            </li>
+            <li>
+
+                <input type="text" value="电话:{{ telephone }}" readonly='readonly'>
+            </li>
+            <li>
+
+                <input type="text" value="城市/区域:{{ city }}" readonly='readonly'>
+            </li>
+            <li>
+
+                <input type="text" value="详细地址:{{ detailed_address }}" readonly='readonly'>
+            </li>
+            <li>
+
+                <input type="text" value="公司名称:{{ name_of_company }}" readonly='readonly'>
+            </li>
+
+        </ul>
+    </div>
+    <a href="recipient"><h2>收件人</h2></a>
+    <div>
+        收件人信息
+        <ul>
+            <li>
+                <input type="text" value="姓名:{{ re_name }}" readonly='readonly'>
+            </li>
+            <li>
+
+                <input type="text" value="电话:{{ re_telephone }}" readonly='readonly'>
+            </li>
+            <li>
+
+                <input type="text" value="城市/区域:{{ re_city }}" readonly='readonly'>
+            </li>
+            <li>
+
+                <input type="text" value="详细地址:{{ re_detailed_address }}" readonly='readonly'>
+            </li>
+            <li>
+
+                <input type="text" value="公司名称:{{ re_name_of_company }}" readonly='readonly'>
+            </li>
+
+        </ul>
+    </div>
+    <div>
+
+        &emsp;&emsp;<a href="address_page">地址簿管理</a>&emsp;&emsp;&emsp;&emsp;
+        <a href="create_order">下单</a>
+
+
+    </div>
+
 </div>
-<a href="recipient">收件人</a>
-<div>
-    收件人信息
-</div>
-<a href="address_page">地址簿管理</a>
-<a href="#">生成订单</a>
-</body>
-</html>
+
+
+
+
+{% endblock %}

@@ -1,16 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>查询订单模块</title>
-    <link rel="stylesheet" href="/static/css/order.css">
-</head>
-<body>
-        <div>
-            订单基本信息
-            <p>
-                <a href="#">订单详细信息</a>
-            </p>
-        </div>
-</body>
-</html>
+{% extends 'order/start.html' %}
+{% block title %}
+查询订单模块
+{% endblock %}
+
+
+
+{% block body %}
+<form action="" method="post">
+    <div id="order_base_info" style="height: 400px">
+        <p>
+            <a href="#">订单详细信息</a>
+        </p>
+    </div>
+
+</form>
+{% endblock %}

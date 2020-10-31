@@ -1,18 +1,147 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>order测试页</title>
+    <title>
+        {% block title %}
+        用户界面
+        {% endblock %}
+    </title>
     <link rel="stylesheet" href="/static/css/order.css">
 </head>
+
 <body>
-<div>
-<a href="main_order_web">下订单</a>
-<a href="main_search_web">查询订单</a>
-<a href="main_my_info">我的</a>
+    <div id="header">
+        <span style="float: left">
+            <a href="">
+                <h1>物流管理系统</h1>
+            </a>
+        </span>
+        <span class="list">
+            <ul>
+                <li>
+                    <a href="appstart">主界面</a>
+                </li>
+                <li>
+                    <a href="main_order_web">下订单</a>
+                </li>
+                <li>
+                    <a href="main_search_web">查询订单</a>
+                </li>
+                <li>
+                    <a href="main_my_info">我的</a>
+                </li>
 
-</div>
+            </ul>
+
+        </span>
+
+    </div>
+
+    <div id="master">
+        {% block body %}
+        <div id="advertisement">
+            <h1 style="width: 1200px">物流服务介绍</h1>
+            <div style="width: 1200px; margin-top: 40px">
+                <div style="float: left;">
+                    <div>
+                        <img src="/static/imgs/advertiment/ad1.jpg" alt="">
+                    </div>
+                    <div>
+                        <p>
+                            <h3>特快物流</h3>
+                        </p>
+                        <p>我司为顾客提供'快速,准时,稳定,安全的高品质,门到门快递服务
+                            ,优质路线'</p>
+
+                    </div>
+                </div>
+                <div style="float: right;">
+                    <div>
+                        <img style="width: 499px; height: 303px" src="/static/imgs/background/background5.jpg" alt="">
+                    </div>
+                    <div>
+                        <p>
+                            <h3>标快服务</h3>
+                        </p>
+                        <p>全场景的标准时效快递,是为客户提供价格经济,时效稳定,的送货上门服务</p>
+
+                    </div>
+                </div>
+                <div style="clear: both">
+                </div>
+            </div>
+
+            <h1 style="width: 1200px; margin-top: 40px">新闻资讯</h1>
+            <div style="width:1200px">
+                <div style="height: 200px">
+                    <div style="width: 560px;float: left;margin: 20px 20px 20px 20px;">
+                        <div style="width: 200px;float: left;">
+                            <img style="width: 200px;height: 160px;" src="/static/imgs/content/fengniao1.jpg" alt="">
+                        </div>
+                        <div style="width: 360px;float: right;">
+                            <p>
+                                <h3>我司大型无人机首次投入业务场景,成功落地内蒙机场</h3>
+                            </p>
+                            <p>8月21日上午8点，近一个小时后飞机抵达内蒙古目的地机场。这标志着，大型无人机基于业务场景下，首次载货</p>
+                        </div>
+                        <div style="clear: both"></div>
+                    </div>
+                    <div style="width: 560px;float: left;margin: 20px 20px 20px 20px;">
+                        <div style="width: 200px;float: left;">
+                            <img style="width: 200px;height: 160px;" src="/static/imgs/content/fumaohui1.jpg" alt="">
+                        </div>
+                        <div style="width: 360px;float: right;">
+                            <p>
+                                <h3>亮相2020中国服贸会,展现中国快递企业一站式服务</h3>
+                            </p>
+                            <p>2020年9月4日-9日，中国国际服务贸易交易会将在北京国家会议中心召开，作为中国服务贸易领域的重</p>
+                        </div>
+                        <div style="clear: both"></div>
+                    </div>
+                    <div style="clear: both"></div>
+                </div>
+                <div style="height: 200px">
+                    <div style="width: 560px;float: left;margin: 20px 20px 20px 20px;">
+                        <div style="width: 200px;float: left;">
+                            <img style="width: 200px;height: 160px;" src="/static/imgs/content/xinjiang1.jpg" alt="">
+                        </div>
+                        <div style="width: 360px;float: right;">
+                            <p>
+                                <h3>航空747全货机首飞新疆：满载防疫物资，全力支援</h3>
+                            </p>
+                            <p>京时间2020年8月5日晚22:51，在民航各级管理部门及多地机场的大力支持下，一架B747-400型全货机满载着防疫物资顺利完成“北京-济南</p>
+                        </div>
+                        <div style="clear: both"></div>
+                    </div>
+                    <div style="width: 560px;float: left;margin: 20px 20px 20px 20px;">
+                        <div style="width: 200px;float: left;">
+                            <img style="width: 200px;height: 160px;" src="/static/imgs/content/rengongzhineng1.jpg" alt="">
+                        </div>
+                        <div style="width: 360px;float: right;">
+                            <p>
+                                <h3>2020世界人工智能大会云端峰会开幕,我公司入驻AI</h3>
+                            </p>
+                            <p>7月9-11日，被誉为AI行业发展风向标的世界人工智能大会（简称WAIC）拉开帷幕。在疫情背景下，本届WAIC一改传统的线下展览方式，转为线上云展览，</p>
+                        </div>
+                        <div style="clear: both"></div>
+                    </div>
+                    <div style="clear: both"></div>
+                </div>
+
+
+            </div>
+
+
+        </div>
+        {% endblock %}
+
+    </div>
+
+    <div id="footer">
+        声明:
+    </div>
 </body>
-</html>
 
+</html>

@@ -1,15 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>中转</title>
+    <title>
+        {% block title %}
+        中转站
+        {% endblock %}
+    </title>
+    <link rel="stylesheet" href="/static/css/order.css">
 </head>
+
 <body>
-    <div>
-        <a href="">确认接收快件</a>
-        <a href="">重新分配下一中转站 确认发送</a>
-        <a href="">终点站 确认接收派送</a>
+    <div id="header">
+        <span style="float: left">
+            <h1>中转站</h1>
+        </span>
+        <span>
+            <a href="/order/main_my_info" style="float: right">我的</a>
+        </span>
 
     </div>
+
+    <div id="master">
+        {% block body %}
+        <div>
+            <ul>
+                <li>
+                        <a href="">确认接收快件</a>
+                </li>
+                <li>
+                        <a href="">重新分配下一中转站 确认发送</a>
+                </li>
+                <li>
+                        <a href="">终点站 确认接收派送</a>
+                </li>
+            </ul>
+
+
+        </div>
+        {% endblock %}
+
+    </div>
+
+    <div id="footer">
+        声明:
+    </div>
 </body>
+
 </html>
